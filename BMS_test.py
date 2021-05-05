@@ -6,7 +6,7 @@ class test_bms_ranges(unittest.TestCase):
     self.assertTrue(BMSMonitoring.getSequenceCount([3, 3, 5, 4, 10, 11, 12]) == { "3-5" : "4", "10-12" : "3" }
   
   def test_valid_input(self)
-    self.assertTrue(BMSMonitoring.isValidInput([]) == True )
+    self.assertTrue(BMSMonitoring.isValidInput("3,3,5,4,10,11,12") == True )
 
 if __name__ =='__main__':
   unittest.main()
